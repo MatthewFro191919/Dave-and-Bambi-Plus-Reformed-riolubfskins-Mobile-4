@@ -103,4 +103,4 @@ jobs:
           tag_name: "${{ needs.get-commit-hash.outputs.commit_hash }}"
           prerelease: true
           files: |
-            /.zip
+            /*.zip
