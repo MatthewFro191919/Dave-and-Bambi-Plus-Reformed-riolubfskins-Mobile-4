@@ -51,7 +51,7 @@ jobs:
           - name: Windows
             os: windows-latest
             buildArgs: "windows -D officialBuild"
-            setupCommand: sh ./setup/windows.bat
+            setupCommand: .\"setup/windows.bat"
             artifactName: windowsBuild
             artifactPath: "export/release/windows/bin/*.exe"
     uses: ./.github/workflows/build.yml
