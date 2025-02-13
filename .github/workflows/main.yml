@@ -34,14 +34,12 @@ jobs:
           else
             echo "Seems to be correct..."
           fi
-
       - name: Get latest commit hash
         id: get_commit_hash
         run: |
           commit_hash=${GITHUB_SHA::7}
           echo "Latest commit hash is $commit_hash"
           echo "::set-output name=COMMIT_HASH::$commit_hash"
-
   Desktop:
     name: ${{ matrix.name }}
     needs: get-commit-hash
@@ -62,22 +60,3 @@ jobs:
         buildArgs: ${{ matrix.buildArgs }}
         artifactName: ${{ matrix.artifactName }}
         artifactPath: ${{ matrix.artifactPath }}
-  Releaser:
-    needs: [get-commit-hash, Desktop]
-    runs-on: windows-latest
-    permissions: write-all
-    steps:
-      - name: Download Windows Build
-        uses: actions/download-artifact@main
-        with:
-           name: windowsBuild
-      - name: Zip iOS Build For Release
-        run: zip -r /home/runner/${{ env.PROJECT_NAME }}-Windows.zip ${{ github.workspace }}/${{ env.PROJECT_NAME }}.exe
-      - name: Publish The Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: "${{ needs.get-commit-hash.outputs.commit_hash }}"
-          tag_name: "${{ needs.get-commit-hash.outputs.commit_hash }}"
-          prerelease: true
-          files: |
-           /${{ matrix.artifactPath }}/.zip
