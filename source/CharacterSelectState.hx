@@ -94,8 +94,8 @@ class CharacterSelectState extends MusicBeatState
 	public var characters:Array<CharacterInSelect> = 
 	[
 		new CharacterInSelect('bf', [1, 1, 1, 1], [
-			new CharacterForm('bf', 'Boyfriend', [1,1,1,1]),
-			new CharacterForm('bf-pixel', 'Pixel Boyfriend', [1,1,1,1]),
+			new CharacterForm('bf', 'Riolu', [1,1,1,1]),
+			new CharacterForm('bf-shiny', 'Riolu (Shiny)', [1,1,1,1]),
 			new CharacterForm('bf-3d', '3D Boyfriend', [1,1,1,1], '3D')
 		]),
 		new CharacterInSelect('dave', [0.25, 0.25, 2, 2], [
