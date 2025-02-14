@@ -2483,15 +2483,6 @@ class Character extends FlxSprite
 
 	override function update(elapsed:Float)
 	{
-		if (curCharacter == 'bf' && FlxG.random.bool(1, 4096) * 100)
-	        {
-	             curCharacter == 'bf-shiny';
-	        }
-		else
-	        {
-	            curCharacter == 'bf';
-		}
-
 		if (animation == null)
 		{
 			super.update(elapsed);
