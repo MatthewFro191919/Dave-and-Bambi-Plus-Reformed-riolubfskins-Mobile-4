@@ -95,8 +95,7 @@ class CharacterSelectState extends MusicBeatState
 	[
 		new CharacterInSelect('bf', [1, 1, 1, 1], [
 			new CharacterForm('bf', 'Boyfriend', [1,1,1,1]),
-			new CharacterForm('bf-pixel', 'Pixel Boyfriend', [1,1,1,1]),
-			new CharacterForm('bf-3d', '3D Boyfriend', [1,1,1,1], '3D')
+			new CharacterForm('bf-pixel', 'Pixel Boyfriend', [1,1,1,1])
 		]),
 		new CharacterInSelect('dave', [0.25, 0.25, 2, 2], [
 			new CharacterForm('dave', 'Dave', [0.25, 0.25, 2, 2]),
