@@ -286,7 +286,7 @@ class PlayState extends MusicBeatState
 	public var compactScore:String;
 	public var compactMisses:String;
 	public var compactNPS:String;
-    public var compactMaxCombo:String;
+	public var compactMaxCombo:String;
 	public var compactTotalPlays:String;
 	var formattedMaxScore:String;
 	var formattedSongScore:String;
@@ -398,7 +398,7 @@ class PlayState extends MusicBeatState
 	var desertBG:BGSprite;
 	var desertBG2:BGSprite;
 	var sign:BGSprite;
-    var georgia:BGSprite;
+        var georgia:BGSprite;
 	var train:BGSprite;
 	var maze:BGSprite;
 	var trainSpeed:Float;
@@ -519,7 +519,7 @@ class PlayState extends MusicBeatState
 		Paths.clearStoredMemory();
 
 		var compactCombo:String = formatCompactNumber(combo);
-        var compactMaxCombo:String = formatCompactNumber(maxCombo);
+                var compactMaxCombo:String = formatCompactNumber(maxCombo);
 		var compactScore:String = formatCompactNumber(songScore);
 		var compactMisses:String = formatCompactNumberInt(misses);
 		var compactNPS:String = formatCompactNumber(nps);
@@ -878,7 +878,6 @@ class PlayState extends MusicBeatState
 					bgSprite.color = getBackgroundColor(SONG.song.toLowerCase() != 'interdimensional' ? 'daveHouse_night' : 'festival');
 					bgSprite.alpha = 0;
 				}
-			    
 		}
 		var gfVersion:String = SONG.gfVersion;
 
