@@ -53,8 +53,8 @@ class Character extends FlxSprite
 
 		switch (curCharacter)
 		{
-			case 'bf-shiny':
-				frames = Paths.getSparrowAtlas('characters/BOYFRIEND_Shiny', 'shared');
+			case 'bf':
+				frames = Paths.getSparrowAtlas('characters/BOYFRIEND', 'shared');
 				
 				animation.addByPrefix('idle', 'BF IDLE DANCE', 24, false);
 				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
@@ -86,8 +86,8 @@ class Character extends FlxSprite
 				nativelyPlayable = true;
 
 				flipX = true;
-			case 'bf':
-				frames = Paths.getSparrowAtlas('characters/BOYFRIEND', 'shared');
+			case 'bf-shiny':
+				frames = Paths.getSparrowAtlas('characters/BOYFRIEND_Shiny', 'shared');
 				
 				animation.addByPrefix('idle', 'BF IDLE DANCE', 24, false);
 				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
