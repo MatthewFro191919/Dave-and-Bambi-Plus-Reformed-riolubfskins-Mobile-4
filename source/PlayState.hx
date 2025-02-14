@@ -286,7 +286,7 @@ class PlayState extends MusicBeatState
 	public var compactScore:String;
 	public var compactMisses:String;
 	public var compactNPS:String;
-    public var compactMaxCombo:String;
+        public var compactMaxCombo:String;
 	public var compactTotalPlays:String;
 	var formattedMaxScore:String;
 	var formattedSongScore:String;
@@ -398,7 +398,7 @@ class PlayState extends MusicBeatState
 	var desertBG:BGSprite;
 	var desertBG2:BGSprite;
 	var sign:BGSprite;
-    var georgia:BGSprite;
+        var georgia:BGSprite;
 	var train:BGSprite;
 	var maze:BGSprite;
 	var trainSpeed:Float;
@@ -516,10 +516,19 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		if (boyfriend.curCharacter('bf') && FlxG.random.bool((1 / 4096) * 100))
+	        {
+	             curCharacter == 'bf-shiny';
+	        }
+		else
+	        {
+	            curCharacter == 'bf';
+		}
+
 		Paths.clearStoredMemory();
 
 		var compactCombo:String = formatCompactNumber(combo);
-        var compactMaxCombo:String = formatCompactNumber(maxCombo);
+                var compactMaxCombo:String = formatCompactNumber(maxCombo);
 		var compactScore:String = formatCompactNumber(songScore);
 		var compactMisses:String = formatCompactNumberInt(misses);
 		var compactNPS:String = formatCompactNumber(nps);
