@@ -108,7 +108,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
 				animation.addByPrefix('hit', 'BF hit', 24, false);
 
-				loadOffsetFile(curCharacter);
+				loadOffsetFile(bf-shiny);
 
 				skins.set('gfSkin', 'gf');
 				skins.set('3d', 'bf-3d');
