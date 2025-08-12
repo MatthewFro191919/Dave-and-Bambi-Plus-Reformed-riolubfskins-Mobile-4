@@ -1351,7 +1351,24 @@ class Character extends FlxSprite
 			
 
 			playAnim('idle');
-			case 'bambi-joke':
+			case 'bambi-spooky':
+				frames = Paths.getSparrowAtlas('characters/bambi_spooky', 'shared');
+
+				animation.addByPrefix('idle', 'idle', 24, false);
+				for (anim in ['left', 'down', 'up', 'right'])
+				{
+					animation.addByPrefix('sing${anim.toUpperCase()}', anim, 24, false);	
+				}
+				loadOffsetFile(curCharacter);
+				
+				globalOffset = [0, 360];
+				barColor = FlxColor.fromRGB(12, 181, 0);
+
+				playAnim('idle');
+				antialiasing = false;
+				nativelyPlayable = true;
+
+							case 'bambi-joke':
 				frames = Paths.getSparrowAtlas('joke/bambi-joke', 'shared');
 
 				animation.addByPrefix('idle', 'idle', 24, false);
