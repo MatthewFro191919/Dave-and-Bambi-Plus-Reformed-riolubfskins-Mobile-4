@@ -36,8 +36,8 @@ jobs:
           sudo apt-get install libvlccore-dev
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null --quiet
-          chmod +x ./setup/unix.sh
-          sh ./setup/unix.sh
+          chmod +x ./Bulid.sh
+          sh ./Bulid.sh
       - name: rebuild extension-webm
         run: haxelib run lime rebuild extension-webm linux
       - name: Skip SScript setup mode
@@ -66,7 +66,7 @@ jobs:
         run: |
           haxelib setup C:/haxelib
           haxelib install hxcpp --quiet
-          .\"setup/windows.bat"
+          .\"Bulid.bat"
         shell: cmd
       - name: rebuild extension-webm
         run: haxelib run lime rebuild extension-webm windows
@@ -97,8 +97,8 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null --quiet
-          chmod +x ./setup/unix.sh
-          sh ./setup/unix.sh
+          chmod +x ./Bulid.sh
+          sh ./Bulid.sh
       - name: rebuild extension-webm
         run: haxelib run lime rebuild extension-webm mac
       - name: Skip SScript setup mode
