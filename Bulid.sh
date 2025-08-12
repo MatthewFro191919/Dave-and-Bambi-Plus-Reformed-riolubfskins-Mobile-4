@@ -15,9 +15,11 @@ haxelib run lime setup
 haxelib remove flixel-addons
 haxelib remove flixel-tools
 haxelib remove flixel-ui
+haxelib remove flixel
 haxelib install flixel-tools
-haxelib install flixel-ui
+haxelib install flixel-ui 2.6.4
 haxelib install flixel-addons 2.9.0
+haxelib install flixel 4.11.0
 haxelib install tjson
 haxelib install hxjsonast
 haxelib install hxCodec 2.5.1
