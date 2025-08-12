@@ -1384,7 +1384,7 @@ class Character extends FlxSprite
 
 				barColor = FlxColor.fromRGB(12, 181, 0);
 				nativelyPlayable = true;
-				flipX = true;
+				flipX = false;
 				playAnim('idle');
 
 			case 'bambi-joke-mad':
