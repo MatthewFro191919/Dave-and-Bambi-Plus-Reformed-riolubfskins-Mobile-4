@@ -26,4 +26,3 @@ haxelib git faxe https://github.com/uhrobots/faxe
 haxelib git polymod https://github.com/larsiusprime/polymod.git
 haxelib install hxcpp-debug-server
 haxelib list
-haxelib list
