@@ -455,7 +455,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['too-slow-encore'], 23, ['bambi-new']);
 				addWeek(['Old-Too-Slow'], 2, ['bambi-angey-old']);
 				addWeek(['8-28-63'], 2, ['bambi']);
-				addWeek(['Sucked'], 5, ['bambi-joke']);
+				addWeek(['Sucked'], 5, ['bambi-spooky']);
 				if (FlxG.save.data.electricCockaldoodledooUnlocked)
 					addWeek(['Cuzsie-X-Kapi-Shipping-Cute'], 20, ['cuzsiee']);
 			case 'terminal':
