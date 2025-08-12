@@ -153,7 +153,8 @@ class Character extends FlxSprite
 				playAnim('idle');
 				antialiasing = false;
 				nativelyPlayable = true;
-				flipX = true;
+				flipX = false;
+
 			case 'bf-cool':
 				frames = Paths.getSparrowAtlas('characters/Cool_BF', 'shared');
 				
