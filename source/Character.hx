@@ -1348,9 +1348,9 @@ class Character extends FlxSprite
 			playAnim('idle');
 				
 			globalOffset = [37, 90];
-			
 
 			playAnim('idle');
+	
 			case 'bambi-spooky':
 				frames = Paths.getSparrowAtlas('characters/bambi_spooky', 'shared');
 
