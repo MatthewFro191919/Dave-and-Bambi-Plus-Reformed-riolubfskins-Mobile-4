@@ -8,7 +8,7 @@ mkdir ~/haxelib && haxelib setup ~/haxelib
 echo Installing dependencies...
 echo This might take a few moments depending on your internet speed.
 haxelib install lime 8.0.0
-haxelib install openfl
+haxelib install openfl 9.3.0
 haxelib install flixel 4.11.0
 haxelib run lime setup flixel
 haxelib run lime setup         
