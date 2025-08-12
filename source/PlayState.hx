@@ -3288,7 +3288,6 @@ class PlayState extends MusicBeatState {
 		if (!countdownStart) {
 			new FlxTimer().start(1, function(t:FlxTimer) {
 				countdownStart = true;
-				super.startCountdown();
 				sparkBF.alpha = 0;
 			});
 
