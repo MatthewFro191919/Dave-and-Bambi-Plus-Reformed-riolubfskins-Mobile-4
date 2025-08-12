@@ -2014,7 +2014,7 @@ class PlayState extends MusicBeatState
 				black.screenCenter();
 				add(black);
 
-	                                dad.color = nightColor;
+	            dad.color = nightColor;
 				gf.color = nightColor;
 				boyfriend.color = nightColor;
 			case 'house' | 'house-night' | 'house-sunset':
