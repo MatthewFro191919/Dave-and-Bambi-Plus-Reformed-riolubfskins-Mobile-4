@@ -38,8 +38,6 @@ jobs:
           haxelib install hxcpp > /dev/null --quiet
           chmod +x ./Bulid.sh
           sh ./Bulid.sh
-      - name: rebuild extension-webm
-        run: haxelib run lime rebuild extension-webm linux
       - name: Skip SScript setup mode
         run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> ~/settings.cocoa
       - name: Create Version Tag
@@ -68,8 +66,6 @@ jobs:
           haxelib install hxcpp --quiet
           .\"Bulid.bat"
         shell: cmd
-      - name: rebuild extension-webm
-        run: haxelib run lime rebuild extension-webm windows
       - name: Skip SScript setup mode
         run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> %USERPROFILE%/settings.cocoa
         shell: cmd
@@ -99,8 +95,6 @@ jobs:
           haxelib install hxcpp > /dev/null --quiet
           chmod +x ./Bulid.sh
           sh ./Bulid.sh
-      - name: rebuild extension-webm
-        run: haxelib run lime rebuild extension-webm mac
       - name: Skip SScript setup mode
         run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> ~/settings.cocoa
       - name: Create Version Tag
