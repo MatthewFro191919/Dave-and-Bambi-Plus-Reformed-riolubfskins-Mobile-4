@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bambi_spooky.png">
+<SubTexture name="down0000" x="0" y="0" width="232" height="343" frameX="-68" frameY="-19" frameWidth="368" frameHeight="368" />
+<SubTexture name="idle0000" x="232" y="0" width="232" height="343" frameX="-68" frameY="-19" frameWidth="368" frameHeight="368" />
+<SubTexture name="left0000" x="464" y="0" width="232" height="343" frameX="-68" frameY="-19" frameWidth="368" frameHeight="368" />
+<SubTexture name="right0000" x="0" y="343" width="232" height="343" frameX="-68" frameY="-19" frameWidth="368" frameHeight="368" />
+<SubTexture name="up0000" x="232" y="343" width="232" height="343" frameX="-68" frameY="-19" frameWidth="368" frameHeight="368" />
+</TextureAtlas>

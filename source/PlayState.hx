@@ -2027,6 +2027,11 @@ class PlayState extends MusicBeatState {
 		var bgZoom:Float = 0.7;
 		var stageName:String = '';
 		switch (bgName) {
+			case 'spooky2':
+				bgZoom = 1.05;
+	                        dad.color = nightColor;
+				gf.color = nightColor;
+				boyfriend.color = nightColor;
 			case 'house' | 'house-night' | 'house-sunset':
 				bgZoom = 0.8;
 
@@ -4402,6 +4407,12 @@ class PlayState extends MusicBeatState {
 			tox = -400 - Math.cos((elapsedtime)) * 200;
 
 			dad.x += (tox - dad.x);
+			dad.y += (toy - dad.y);
+		}
+
+		if (dad.curCharacter == 'bambi-spooky') {
+			toy = 100 + -Math.sin((elapsedtime) * 2) * 300;
+
 			dad.y += (toy - dad.y);
 		}
 
@@ -8443,6 +8454,23 @@ class PlayState extends MusicBeatState {
 						FlxTween.tween(black, {alpha: 0}, 1);
 					case 1232:
 						FlxG.camera.flash();
+				}
+			case '8-28-63':
+				switch (curStep) {
+					case 576:
+						subtitleManager.addSubtitle("I'm going to say the n-word!", 0.02, 0.3, {subtitleSize: 45});
+					case 611:
+						subtitleManager.addSubtitle("that's it (x2)", 0.02, 0.3, {subtitleSize: 45});
+					case 625:
+						subtitleManager.addSubtitle("I FUCKING KNEW IT", 0.02, 0.3, {subtitleSize: 45});
+					case 1856:
+						subtitleManager.addSubtitle("I'm going to say the n-word!", 0.02, 0.3, {subtitleSize: 45});
+					case 1897:
+						subtitleManager.addSubtitle("sssstop!!", 0.02, 0.3, {subtitleSize: 45});
+					case 1912:
+						subtitleManager.addSubtitle("STOP!!!!!", 0.02, 0.3, {subtitleSize: 45});
+					case 2407:
+						subtitleManager.addSubtitle("moldy, you're a troll, i knew it!", 0.02, 0.3, {subtitleSize: 45});
 				}
 			case 'greetings':
 				switch (curStep) {
